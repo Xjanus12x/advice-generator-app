@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Advice generator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="wrapper">
+      <section class="container">
+
+        <header class="header text-center">
+          <h1 class="header__title"></h1>
+        </header>
+
+        <div class="text-center">
+          <q class="advice"></q>
+        </div>
+        <picture>
+          <source media="(min-width:540px)" srcset="./images/pattern-divider-desktop.svg" aria-hidden>
+          <img class="divider" src="./images/pattern-divider-mobile.svg" alt="Divider" aria-hidden>
+        </picture>
+
+
+        <button class="button" onclick="fetchRandomAdvice()">
+          <img src="./images/icon-dice.svg" alt="Dice icon" aria-hidden>
+        </button>
+
+      </section>
+    </div>
+
+  </main>
+</body>
+
+</html>
